@@ -1,5 +1,7 @@
 Config = {}
 
+Config.Locale = 'cs'
+
 -- Are you using ESX? Turn this to true if you would like fuel & jerry cans to cost something.
 Config.UseESX = true
 
