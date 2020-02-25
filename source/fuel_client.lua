@@ -8,13 +8,9 @@ if Config.UseESX then
 	end)
 end
 
-local isNearPump = false
-local isFueling = false
-local currentFuel = 0.0
-local currentCost = 0.0
+local isNearPump, isFueling, fuelSynced, inBlacklisted = false, false, false, false
+local currentFuel, currentCost = 0.0, 0.0
 local currentCash = 1000
-local fuelSynced = false
-local inBlacklisted = false
 
 function ManageFuelUsage(vehicle)
 	if not DecorExistOn(vehicle, Config.FuelDecor) then
